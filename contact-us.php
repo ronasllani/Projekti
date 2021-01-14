@@ -9,15 +9,15 @@
 
     <body>
         <header>
-            <a href="home.html" class="logo"><img class="logo" src="img/logo.png" ></a>
+            <a href="home.php" class="logo"><img class="logo" src="img/logo.png" ></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="home.html" >Home</a></li>
-                    <li><a href="menu.html" >Menu</a></li>
-                    <li><a href="contact-us.html" class="active">Contact Us</a></li>
+                    <li><a href="home.php" >Home</a></li>
+                    <li><a href="menu.php" >Menu</a></li>
+                    <li><a href="contact-us.php" class="active">Contact Us</a></li>
                 </ul>
             </nav>            
-            <a class="lgr" href="login.html"><button class="navbut">Log In / Register</button></a>
+            <a class="lgr" href="login.php"><button class="navbut">Log In / Register</button></a>
         </header>
         <main>
             <div class="contacttext">
@@ -59,10 +59,10 @@
                 <div class="footer-nav">
                     <h3 class="nav-titulli">Pages</h3>
                     <div class="nav-elements">
-                        <a href="home.html"><p >Home</p></a>
-                        <a href="menu.html"><p>Menu</p></a>
-                        <a href="contact-us.html"><p>Contact Us</p></a>
-                        <a href="login.html"><p>Login / Register</p></a>
+                        <a href="home.php"><p >Home</p></a>
+                        <a href="menu.php"><p>Menu</p></a>
+                        <a href="contact-us.php"><p>Contact Us</p></a>
+                        <a href="login.php"><p>Login / Register</p></a>
                     </div>
                 </div>
                 <div class="footer-contact">

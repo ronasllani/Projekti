@@ -9,15 +9,15 @@
 
     <body>
         <header>
-            <a href="home.html" class="logo"><img class="logo" src="img/logo.png" ></a>
+            <a href="home.php" class="logo"><img class="logo" src="img/logo.png" ></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="home.html" >Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="home.php" >Home</a></li>
+                    <li><a href="menu.php">Menu</a></li>
+                    <li><a href="contact-us.php">Contact Us</a></li>
                 </ul>
             </nav>            
-            <a class="lgr" class="active" href="login.html"><button class="navbut">Log In / Register</button></a>
+            <a class="lgr" class="active" href="login.php"><button class="navbut">Log In / Register</button></a>
         </header>
         <main class="loginmain">
             <div class="container">
