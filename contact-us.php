@@ -25,7 +25,7 @@
                     Mos t'vje marre, dergo mesazh!
                 </h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae soluta neque minima eveniet amet distinctio ad tempora, molestias consequuntur impedit! Esse distinctio odit provident nesciunt excepturi totam. Adipisci, necessitatibus autem!
+                    Lorem ipsum dolor sit a, amet consectetur adipisicing elit. Recusandae soluta neque minima eveniet amet distinctio ad tempora, molestias consequuntur impedit! Esse distinctio odit provident nesciunt excepturi totam. Adipisci, necessitatibus autem!
                 </p>
             </div>
             <form id="myForm" class="contactus">
