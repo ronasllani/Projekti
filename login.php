@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <?php include ('activenav.php');?>
         <title>Login and Register</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
@@ -9,15 +10,7 @@
 
     <body>
         <header>
-            <a href="home.php" class="logo"><img class="logo" src="img/logo.png" ></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.php" >Home</a></li>
-                    <li><a href="menu.php">Menu</a></li>
-                    <li><a href="contact-us.php">Contact Us</a></li>
-                </ul>
-            </nav>            
-            <a class="lgr" class="active" href="login.php"><button class="navbut">Log In / Register</button></a>
+            <?php include ('./components/header.php');?>    
         </header>
         <main class="loginmain">
             <div class="container">

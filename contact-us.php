@@ -10,7 +10,7 @@
 
     <body>
         <header>
-         <?php include ('./components/header.php');?>    
+            <?php include ('./components/header.php');?>    
         </header>
         <main>
             <div class="contacttext">
