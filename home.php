@@ -29,15 +29,15 @@
                     <img src="img/hamburger.jpg" alt="hamburger" class="hamburger">
                     <div class="side2">
                         <p>Ju ofrojme shije te veqante me kuzhinjeret me te mire ne rajon. Kemi nje menu te pasur me shumellojshmeri ushqimesh.</p>
-                        <a  href="menu.php"><button class="homebutton">Menu</button></a>
+                        <a  href="menu.php" class="buttonAnchor"><button class="homebutton">Menu</button></a>
                     </div>
                 </div>
                 <div class="side side3">
+                    <img src="img/hamburger1.jpg" alt="hamburger" class="hamburger">
                     <div class="side2">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut atque qui eius vitae iure facilis dolor magnam rerum, corrupti veniam. </p>
-                        <a href="contact-us.php"><button class="homebutton">Na Kontaktoni</button></a>
+                        <a href="contact-us.php" class="buttonAnchor"><button class="homebutton">Na Kontaktoni</button></a>
                     </div>
-                    <img src="img/hamburger1.jpg" alt="hamburger" class="hamburger">
                 </div>
               </div>
         </main>

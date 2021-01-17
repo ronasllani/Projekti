@@ -54,7 +54,7 @@ header{
 .nav-links li{
 box-sizing: border-box;
   display: inline-block;
-  padding:  10px 20px;
+  padding:  10px 15px;
   font-family: sans-serif;
   font-variant: small-caps;
 }
@@ -108,7 +108,7 @@ main{
   transition: all 0.3s ease 0s;
   text-align: center;
   color: white;
-  font-size: 60px;
+  font-size: 5vw;
   padding-bottom: 10px;
 }
 .main-text2{
@@ -117,7 +117,7 @@ main{
   transition: all 0.3s ease 0s;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 30px;
+  font-size: 3vw;
 }
 .row {
   display: flex;
@@ -167,7 +167,7 @@ main{
   font-style: italic;
 }
 .hamburger{
-  width: 50%;
+  width: 400px;
   height: auto;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
@@ -264,7 +264,52 @@ footer{
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   margin-top: 50px;
 }
-
+.buttonAnchor{
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+  .side{
+    flex-direction: column;
+    float: left;
+    align-items: center;
+  }
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+  header>a{
+    margin-left: -20px;
+    margin-bottom: 10px;
+  }
+  .logo{
+    margin: 0 auto;
+  }
+  li, a, .navbut{
+    font-size: 12px;
+  }
+  .nav-links li{
+    padding: 10px 10px;
+  }
+  nav{
+    margin: 0 auto;
+  }
+  .hamburger{
+    width: 350px;
+    height: auto;
+  }
+  .shija-footer>p{
+    width: 200px;
+  }
+  .ititle{
+    font-size: 15px;
+  }
+  .iprice{
+    font-size: 12px;
+  }
+  .idesc>p{
+    font-size: 10px;
+  }
+}
 
 
 /* MENU */
@@ -284,7 +329,7 @@ footer{
   transition: all 0.3s ease 0s;
   text-align: center;
   color: white;
-  font-size: 60px;
+  font-size: 5vw;
   padding-bottom: 10px;
 }
 .menusection{
