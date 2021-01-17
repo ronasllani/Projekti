@@ -8,6 +8,7 @@
     <div class="nav-elements">
         <a href="home.php"><p >Home</p></a>
         <a href="menu.php"><p>Menu</p></a>
+        <a href="about-us.php"><p>About Us</p></a>
         <a href="contact-us.php"><p>Contact Us</p></a>
         <a href="login.php"><p>Login / Register</p></a>
     </div>
