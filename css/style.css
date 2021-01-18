@@ -54,7 +54,7 @@ header{
 .nav-links li{
 box-sizing: border-box;
   display: inline-block;
-  padding:  10px 15px;
+  padding:  10px 1vw;
   font-family: sans-serif;
   font-variant: small-caps;
 }
@@ -437,6 +437,119 @@ footer{
 
 
 
+/* ABOUT US */
+.aboutcontainer{
+  box-sizing: border-box;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.abouttitulli{
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 4vw;
+  font-variant: small-caps;
+  font-family: sans-serif;
+}
+.aboutp{
+  color: rgb(189, 189, 189);
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  /* font-family: sans-serif;
+  font-variant: small-caps; */
+}
+
+
+.slideroverlay{
+  background-color: black;
+  height: auto;
+  width: auto;
+}
+.slidecontainer {
+  max-width: 500px;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+.mySlides{
+  
+
+  text-align: center;
+}
+.sliderP{
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  font-family: Verdana, sans-serif;
+  padding: 100px 100px 0px 100px;
+  transition: 0.6s;
+}
+.thenjaEmri{
+  font-family: Verdana, sans-serif;
+  font-variant: small-caps;
+  margin-top: 15px;
+  color: rgb(201, 171, 129);
+}
+.profesioni{
+  font-family: Verdana, sans-serif;
+  font-variant: small-caps;
+  margin-top: 10px;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.nr {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.nractive, .nr:hover {
+  font-size: 25px;
+  color: rgb(201, 171, 129);
+  transition: 0.2s ease;
+}
+
+
+
+
 /* CONTACT US */
 .contacttext{
   box-sizing: border-box;
@@ -496,7 +609,7 @@ footer{
 
 
 .contactText .input{
-  width: 48%;
+  width: 100%;
   float: left;
   margin-right: 4%;
 }
