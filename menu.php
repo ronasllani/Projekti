@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> 
+        <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
         <?php include ('activenav.php');?>
         <title>Menu</title>
         <link rel="stylesheet" href="css/style.css">

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
         <?php include ('activenav.php');?>
         <title>Contact Us</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
-
     </head>
 
     <body>

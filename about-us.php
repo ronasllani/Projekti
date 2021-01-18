@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
         <?php include ('activenav.php');?>
         <title>Home</title>
         <link rel="stylesheet" href="css/style.css">
@@ -14,7 +15,6 @@
 
         <main>
             <div class="home-container">
-                <div class="home-overlay"></div>
                 <img src="img/about-us.jpg" class="home-foto" alt="">
             </div>
             <div class="main-title">
@@ -27,6 +27,45 @@
                 <p class="aboutp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem qui necessitatibus minima nemo animi. Animi excepturi fugit, </p>
                 <p class="aboutp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam sapiente non maxime rem repellat ipsum dolorem ad exercitationem nam, est facilis. Cumque, totam! Tenetur natus possimus et quibusdam a molestiae!</p>
             </div>
+
+
+            <div class="flip-container">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/flip1.jpg" class="flip-foto">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Embelsira</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugit aliquid itaque sapiente! Aliquam blanditiis vel quae animi ex dignissimos id. Tenetur, beatae eius? Ullam autem ad quam veniam perspiciatis!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/flip3.jpg" class="flip-foto">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Ushqim i Fresket</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quaerat ipsum voluptate? Expedita, dolorum. Dolor natus quis saepe dignissimos, asperiores ipsum ut quas. Impedit est error eveniet animi reiciendis distinctio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <img src="img/flip2.jpg" class="flip-foto">
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>Ushqim Cilesor</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil dolore, dignissimos debitis unde deleniti explicabo sapiente nisi quod nostrum porro id nemo voluptatum accusantium exercitationem libero alias! Aspernatur, vero ipsa!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="slidecontainer">
                 

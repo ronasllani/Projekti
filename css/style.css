@@ -464,20 +464,15 @@ footer{
 }
 
 
-.slideroverlay{
-  background-color: black;
-  height: auto;
-  width: auto;
-}
+
 .slidecontainer {
+  padding-top: 20px;
   max-width: 500px;
   height: auto;
   position: relative;
   margin: auto;
 }
 .mySlides{
-  
-
   text-align: center;
 }
 .sliderP{
@@ -547,6 +542,59 @@ footer{
   transition: 0.2s ease;
 }
 
+
+.flip-container{
+  padding-top: 6vw;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+.flip-box {
+  width: 300px;
+  height: 300px;
+}
+
+.flip-box-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  background-color:rgb(201, 171, 129);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.flip-box-back {
+  padding: 10% 20% 10% 20%;
+  text-align: center;
+  color:  #080e0f;
+  transform: rotateY(180deg);
+}
+.flip-box-back>h2{
+  padding-bottom: 10px;
+  font-variant: small-caps;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flip-foto{
+  width: 300px;
+  height: 300px;
+}
 
 
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
         <?php include ('activenav.php');?>
         <title>Home</title>
         <link rel="stylesheet" href="css/style.css">
@@ -39,7 +40,7 @@
                         <a href="contact-us.php" class="buttonAnchor"><button class="homebutton">Na Kontaktoni</button></a>
                     </div>
                 </div>
-              </div>
+            </div>
         </main>
 
 
