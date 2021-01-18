@@ -31,19 +31,19 @@
             <div class="slidecontainer">
                 
                 <div class="mySlides">
-                    <p class="sliderP">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam sint enim quaerat nostrum itaque corporis id, tenetur repudiandae aliquid impedit distinctio."</p>
+                    <p class="sliderP">"Ushqimet ne kete restaurant jane shume te shijeshme. Stafi eshte shume mikeprites dhe pastertia eshte gjithmone ne nivel."</p>
                     <h2 class="thenjaEmri">Ron Asllani</h2>
                     <p class="profesioni">Konsumator</p>
                 </div>
                 <div class="mySlides">
                     <p class="sliderP">"Ushqimet i punojme me shume delikatese dhe pasioni jone per ushqimin na bene me te miret ne rajon. Ju ftojme t'i provoni ushqimet tona."</p>
-                    <h2 class="thenjaEmri">Filan Fisteku</h2>
+                    <h2 class="thenjaEmri">Enes Shabani</h2>
                     <p class="profesioni">Kuzhinjer</p>
                 </div>
 
                 <div class="mySlides">
-                    <p class="sliderP">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus accusantium incidunt a. Sequi, esse maxime?"</p>
-                    <h2 class="thenjaEmri">Enes Shabani</h2>
+                    <p class="sliderP">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus accusantium incidunt a. Sequi, esse maxime accusantium incidunt?"</p>
+                    <h2 class="thenjaEmri">Filan Fisteku</h2>
                     <p class="profesioni">Kamarier</p>
                 </div>
 
