@@ -44,3 +44,41 @@
     background-color:teal;
     transition: 0.3s;
   }
+  table, th, td {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    border: solid 2px rgba(255, 255, 255, 0.315);
+    color: white;
+    width: 10px;
+    text-align: center;
+    height: 40px;
+    
+  }
+  .users-td{
+    background: rgba(0, 0, 0, 0.527);
+  }
+
+  th{
+    background: rgba(0, 0, 0, 0.527);
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+  td{
+    width: 200px;
+  }
+  .wrapword {
+    word-wrap: break-word;
+    width: 50%;
+
+}
+td{
+  padding: 20px;
+
+}
+.mesazhi{
+    width: 500px;
+  }
+  .mesazhi-main{
+    display: flex;
+    justify-content: center;
+  }

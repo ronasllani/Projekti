@@ -109,6 +109,50 @@ if (isset($_POST['login_btn'])) {
 	}
 }
 
+// validimi i cotact us formes
+
+$cemri = "";
+$cemail = "";
+$ctitulli = "";
+$cmesazhi = "";
+
+//validimi i email qe te pranoj si input vetem emails
+function checkemail($str) {
+	return (!preg_match("/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix", $str)) ? FALSE : TRUE;
+}
+
+if (isset($_POST['dergo_btn'])) {
+
+	$cemri = mysqli_real_escape_string($db, $_POST['cemri']);
+	$cemail = mysqli_real_escape_string($db, $_POST['cemail']);
+	$ctitulli = mysqli_real_escape_string($db, $_POST['ctitulli']);
+	$cmesazhi = mysqli_real_escape_string($db, $_POST['cmesazhi']);
+
+	if(empty($cemri)){
+		array_push($errors, "Shenoni Emrin!");
+	} 
+	if(!checkemail($cemail)) {
+		array_push($errors, "Shenoni Email!");
+	}
+	if(empty($ctitulli)) {
+		array_push($errors, "Zgjedhni Titullin!");
+	}
+	if(empty($cmesazhi)) {
+		array_push($errors, "Shenoni Mesazhin!");
+	}
+
+
+	if(count($errors) == 0){
+		$query = "insert into contact(emri, email, titulli, mesazhi) values ('$cemri', '$cemail', '$ctitulli','$cmesazhi')";
+
+		mysqli_query($db, $query);
+
+		$_SESSION['success'] = "Mesazhi u dergua me sukses";
+
+	}
+}
+
+
 // validimi i butonit logout
 if(isset($_GET['logout'])){
 	session_destroy();
