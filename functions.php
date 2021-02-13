@@ -153,6 +153,45 @@ if (isset($_POST['dergo_btn'])) {
 }
 
 
+// validimi i butonit edit profile i cili ndodhet ne dashboard te userit
+if(isset($_POST['edit_btn'])){
+
+	$id = $_GET['ID'];
+	$emri = mysqli_real_escape_string($db, $_POST['emri']);
+	$mbiemri = mysqli_real_escape_string($db, $_POST['mbiemri']);
+	$username = mysqli_real_escape_string($db, $_POST['username']);
+	$password = mysqli_real_escape_string($db, $_POST['password']);  
+
+	if(empty($emri)){
+		array_push($errors, "Shenoni Emrin!");
+	} 
+	if(empty($mbiemri)) {
+		array_push($errors, "Shenoni Mbiemrin!");
+	}
+	if(empty($username)) {
+		array_push($errors, "Shenoni Username!");
+	}
+	if(empty($password)) {
+		array_push($errors, "Shenoni Password!");
+	}
+
+	$user_exist_query = "SELECT * FROM users WHERE username='$username' LIMIT 1";
+	$result = mysqli_query($db, $user_exist_query);
+	$user = mysqli_fetch_assoc($result);
+	if($user['username'] === $username){
+	array_push($errors, "Ekziston nje account me kete username!");
+}
+
+	if(count($errors) == 0){
+		$query = "update users set emri = '".$emri."', mbiemri='".$mbiemri."' , username='".$username."' , password='".$password."' where id='".$id."'";
+		$result = mysqli_query($db, $query);
+		header('location: user.php');
+		$_SESSION['username'] = $username;
+		$_SESSION['success'] = "Te dhenat u nderruan me sukses";
+
+	}
+}
+
 // validimi i butonit logout
 if(isset($_GET['logout'])){
 	session_destroy();

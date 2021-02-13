@@ -40,8 +40,8 @@
                 <?php endif ?>
                 <div >
                     <h1 class="admin-title">Hello <?php echo $_SESSION['username'];?></h1>
-                </div>
-                <a href="user.php?logout='1'" class="buttonAnchor"><button class="logout-but">Log Out</button></a>
+                <a href="editprofile.php?GetID=<?php echo $id ?>" class="buttonAnchor"><button class="editprofile-button">Edit Profile</button></a>
+                <a href="admin.php?logout='1'" class="buttonAnchor"><button class="logout-but">Log Out</button></a>
 
             </div>
         </main>
