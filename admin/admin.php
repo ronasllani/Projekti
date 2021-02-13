@@ -1,9 +1,22 @@
 <?php include ('../functions.php');
 
+    $strSQL = "SELECT * FROM users WHERE username = '".$_SESSION['username']."' LIMIT 1";
+    $rs = mysqli_query($db, $strSQL);
+
+    while($row = mysqli_fetch_array($rs)) {
+        $id = $row['id'];
+        $emri = $row['emri'];
+        $mbiemri = $row['mbiemri'];
+        $username = $row['username'];
+        $password = $row['password'];
+    }
+
     session_start();
     if(isset($_SESSION['role']) && isset($_SESSION['username'])){
         if(strcmp($_SESSION['role'], 'admin')== 0){
 ?>
+
+
 
 <html>
     <head>
@@ -39,6 +52,23 @@
                 <?php endif ?>
                 <div >
                     <h1 class="admin-title">Hello <?php echo $_SESSION['username'];?></h1>
+                    <h3 class="profile-title">Profile info</h3>
+
+                    <div class="profile-information">
+                        <div class="profile-labels">
+                            <div class="plabel"><p>Emri</p></div>
+                            <div class="plabel"><p>Mbiemri</p></div>
+                            <div class="plabel"><p>Username</p></div>
+                            <div class="lastlabel"><p>Password</p></div>
+                        </div>
+                        <div class="profile-info">
+                            <div class="pinfo"><p><?php echo $emri?></p></div>
+                            <div class="pinfo"><p><?php echo $mbiemri?></p></div>
+                            <div class="pinfo"><p><?php echo $username?></p></div>
+                            <div class="lastinfo"><p><?php echo $password?></p></div>
+                        </div>
+                    </div>
+                    <a href="create-user.php"><button class="create-but">Create User</button></a>
                 </div>
                 <a href="admin.php?logout='1'" class="buttonAnchor"><button class="logout-but">Log Out</button></a>
 

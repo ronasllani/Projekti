@@ -187,6 +187,9 @@ main{
   background-color: teal;
   transition: 0.3s;
 }
+.buttonAnchor{
+  margin: 0 auto;
+}
 .footer-content{
   font-family: sans-serif;
   font-weight: 300;
@@ -264,9 +267,7 @@ footer{
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   margin-top: 50px;
 }
-.buttonAnchor{
-  margin: 0 auto;
-}
+
 @media screen and (max-width: 768px){
   .side{
     flex-direction: column;
@@ -643,6 +644,9 @@ footer{
   color: white;
   transition: all 0.5s ease;
 }
+.contactText{
+  margin-top: 20px;
+}
 
 .input, .area{
   width: 100%;
@@ -691,6 +695,23 @@ footer{
   outline: none;
   border: solid 2px white;
 }
+.csuccess{
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0px auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 12px;
+}
 /*  */
 
 
@@ -701,7 +722,7 @@ footer{
   padding: 0%;
 }
 .container {
-  margin: 12% auto 0 auto ;
+  margin: 10vh auto 0 auto ;
   max-width: 400px;
   min-height: 270px;
   height: auto;
@@ -738,6 +759,7 @@ footer{
   
 .link-container a:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.111);
+  border-left: 2px solid rgba(255, 255, 255, 0.111);
 }
   
 .link-container>a:hover {
@@ -809,25 +831,3 @@ footer{
 }
 
 /*,   */
-
-.csuccess{
-  color: #3c763d; 
-  background: #dff0d8; 
-  border: 1px solid #3c763d;
-  width: 500px;
-  height: 50px;
-  text-align: center;
-  box-sizing: border-box;
-  margin: 0px auto;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-top: 12px;
-}
-
-
-
-  

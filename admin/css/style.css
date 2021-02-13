@@ -1,87 +1,126 @@
 .success{
-    color: #3c763d; 
-	background: #dff0d8; 
-	border: 1px solid #3c763d;
-    width: 200px;
-    text-align: center;
-    box-sizing: border-box;
-    margin: 0px auto;
-    text-align: center;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  width: 200px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0px auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 .admin-info{
-    padding: 2%;
-    margin: 10vh auto 0 auto ;
-    max-width: 400px;
-    height: auto;
-    position: relative;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.104);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-    border: solid 2px rgba(255, 255, 255, 0.111);
-    color: white;
-    font-family: sans-serif;
-    font-variant: small-caps;
-    text-align: center;
-    justify-content: center;
-
+  padding: 2%;
+  margin: 10vh auto 0 auto ;
+  max-width: 400px; 
+  height: auto;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.104);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border: solid 2px rgba(255, 255, 255, 0.111);
+  color: white;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  text-align: center;
+  justify-content: center;
 }
 .admin-title{
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .logout-but{
-    cursor: pointer;
-    padding: 8px;
-    border: solid 2px teal;
-    color: white;
-    background: rgba(0, 0, 0, 0);
-    border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  border: solid 2px teal;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
 }
 .logout-but:hover{
-    background-color:teal;
-    transition: 0.3s;
-  }
-  table, th, td {
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-    border: solid 2px rgba(255, 255, 255, 0.315);
-    color: white;
-    width: 10px;
-    text-align: center;
-    height: 40px;
-    
-  }
-  .users-td{
-    background: rgba(0, 0, 0, 0.527);
-  }
+  background-color:teal;
+  transition: 0.3s;
+}
+.create-but{
+  cursor: pointer;
+  padding: 8px;
+  border: solid 2px rgb(18, 77, 0);
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.create-but:hover{
+  background-color:rgb(18, 77, 0);
+  transition: 0.3s;
+}
+.user-type{
+  color: black;
+}
+table, th, td {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border: solid 2px rgba(255, 255, 255, 0.315);
+  color: white;
+  width: 10px;
+  text-align: center;
+  height: 40px;
+  
+}
 
-  th{
-    background: rgba(0, 0, 0, 0.527);
-    padding-left: 20px;
-    padding-right: 20px;
+th{
+  background: rgb(0, 0, 0);
+  padding-left: 20px;
+  padding-right: 20px;
 
-  }
-  td{
-    width: 200px;
-  }
-  .wrapword {
-    word-wrap: break-word;
-    width: 50%;
+}
+.userstr{
+  background: rgb(0, 0, 0);
+}
+td{
+  width: 200px;
+}
+.wrapword {
+  word-wrap: break-word;
+  width: 50%;
 
 }
 td{
-  padding: 20px;
+padding: 20px;
 
 }
 .mesazhi{
-    width: 500px;
-  }
-  .mesazhi-main{
-    display: flex;
-    justify-content: center;
-  }
+  width: 500px;
+}
+.mesazhi-main{
+  display: flex;
+  justify-content: center;
+}
+.edit-button{
+  cursor: pointer;
+  padding: 8px;
+  border: solid 2px teal;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+.edit-button:hover{
+  background-color:teal;
+  transition: 0.3s;
+}
+.delete-button{
+  cursor: pointer;
+  padding: 8px;
+  border: solid 2px rgb(128, 0, 0);
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+.delete-button:hover{
+  background-color:rgb(128, 0, 0);
+  transition: 0.3s;
+}
 .editprofile-button{
   cursor: pointer;
   padding: 8px;
@@ -95,16 +134,53 @@ td{
   background-color:rgb(128, 0, 0);
   transition: 0.3s;
 }
-.user-type{
-  color: black;
-}
-.error{
-  width: 70%;
+.profile-information{
   margin: 0 auto;
-  padding: 10px;
-  border: 1px solid #a94442;
-  color: #a94442;
-  background: #f2dede;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.104);
+  border: solid 2px rgba(255, 255, 255, 0.111);
   border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-bottom: 15px;
+}
+.profile-labels{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.315);
+}
+.profile-info{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-variant: normal;
+}
+
+.pinfo{
+padding: 6px;
+  border-left: solid 2px rgba(255, 255, 255, 0.111);
+  border-bottom: solid 2px rgba(255, 255, 255, 0.111);
+}
+.lastlabel{
+  padding: 6px;
+  padding-left: 5px;
+}
+.lastinfo{
+  padding: 6px;
+  border-left: solid 2px rgba(255, 255, 255, 0.111);
+  padding-left: 5px;
+}
+.plabel{
+  padding: 6px;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.111);
+  padding-left: 5px;
+}
+.profile-title{
+  margin-bottom: 5px;
+  margin-top: 15px;
 }

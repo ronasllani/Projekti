@@ -65,6 +65,7 @@ if (isset($_POST['register_btn'])) {
 	}
 }
 
+
 // validimi i formes login
 if (isset($_POST['login_btn'])) {
 
@@ -108,6 +109,51 @@ if (isset($_POST['login_btn'])) {
 		
 	}
 }
+
+
+// validimi i formes create user qe ndodhet ne dashboard te adminit
+if (isset($_POST['create_btn'])) {
+
+	$emri = mysqli_real_escape_string($db, $_POST['emri']);
+	$mbiemri = mysqli_real_escape_string($db, $_POST['mbiemri']);
+	$usertype = mysqli_real_escape_string($db, $_POST['usertype']);
+	$username = mysqli_real_escape_string($db, $_POST['username']);
+	$password = mysqli_real_escape_string($db, $_POST['password']);  
+
+	if(empty($emri)){
+		array_push($errors, "Shenoni Emrin!");
+	} 
+	if(empty($mbiemri)) {
+		array_push($errors, "Shenoni Mbiemrin!");
+	}
+	if(empty($usertype)) {
+		array_push($errors, "Zgjedhni Usertype!");
+	}
+	if(empty($username)) {
+		array_push($errors, "Shenoni Username!");
+	}
+	if(empty($password)) {
+		array_push($errors, "Shenoni Password!");
+	}
+
+	$user_exist_query = "SELECT * FROM users WHERE username='$username' LIMIT 1";
+	$result = mysqli_query($db, $user_exist_query);
+	$user = mysqli_fetch_assoc($result);
+	if($user['username'] === $username){
+		array_push($errors, "Ekziston nje account me kete username!");
+	}
+
+	if(count($errors) == 0){
+		$query = "insert into users(emri, mbiemri, user_type, username, password) values ('$emri', '$mbiemri', '$usertype','$username', '$password')";
+
+		mysqli_query($db, $query);
+
+		$_SESSION['success'] = "Useri u krijua me sukses";
+
+		header('location: admin.php');
+	}
+}
+
 
 // validimi i cotact us formes
 
@@ -153,6 +199,48 @@ if (isset($_POST['dergo_btn'])) {
 }
 
 
+
+// validimi i butonit edit user i cili ndodhet ne dashboard te adminit
+if(isset($_POST['update_btn'])){
+
+	$id = $_GET['ID'];
+	$emri = mysqli_real_escape_string($db, $_POST['emri']);
+	$mbiemri = mysqli_real_escape_string($db, $_POST['mbiemri']);
+	$usertype = mysqli_real_escape_string($db, $_POST['usertype']);
+	$username = mysqli_real_escape_string($db, $_POST['username']);
+	$password = mysqli_real_escape_string($db, $_POST['password']);  
+
+	if(empty($emri)){
+		array_push($errors, "Shenoni Emrin!");
+	} 
+	if(empty($mbiemri)) {
+		array_push($errors, "Shenoni Mbiemrin!");
+	}
+	if(empty($usertype)) {
+		array_push($errors, "Zgjedhni Usertype!");
+	}
+	if(empty($username)) {
+		array_push($errors, "Shenoni Username!");
+	}
+	if(empty($password)) {
+		array_push($errors, "Shenoni Password!");
+	}
+
+	$user_exist_query = "SELECT * FROM users WHERE username='$username' LIMIT 1";
+	$result = mysqli_query($db, $user_exist_query);
+	$user = mysqli_fetch_assoc($result);
+	if($user['username'] === $username){
+	array_push($errors, "Ekziston nje account me kete username!");
+}
+
+	if(count($errors) == 0){
+		$query = "update users set emri = '".$emri."', mbiemri='".$mbiemri."', user_type='".$usertype."' , username='".$username."' , password='".$password."' where id='".$id."'";
+		$result = mysqli_query($db, $query);
+		header('location:users.php');
+		$_SESSION['success'] = "Te dhenat u nderruan me sukses";
+	}
+}
+
 // validimi i butonit edit profile i cili ndodhet ne dashboard te userit
 if(isset($_POST['edit_btn'])){
 
@@ -192,52 +280,14 @@ if(isset($_POST['edit_btn'])){
 	}
 }
 
+
+
+
+
 // validimi i butonit logout
 if(isset($_GET['logout'])){
 	session_destroy();
 	unset($_SESSION['username']);
 	header('location: admin/user.php');
 }
-
-// validimi i formes create user qe ndodhet ne dashboard te adminit
-if (isset($_POST['create_btn'])) {
-
-	$emri = mysqli_real_escape_string($db, $_POST['emri']);
-	$mbiemri = mysqli_real_escape_string($db, $_POST['mbiemri']);
-	$usertype = mysqli_real_escape_string($db, $_POST['usertype']);
-	$username = mysqli_real_escape_string($db, $_POST['username']);
-	$password = mysqli_real_escape_string($db, $_POST['password']);  
-
-	if(empty($emri)){
-		array_push($errors, "Shenoni Emrin!");
-	} 
-	if(empty($mbiemri)) {
-		array_push($errors, "Shenoni Mbiemrin!");
-	}
-	if(empty($usertype)) {
-		array_push($errors, "Zgjedhni Usertype!");
-	}
-	if(empty($username)) {
-		array_push($errors, "Shenoni Username!");
-	}
-	if(empty($password)) {
-		array_push($errors, "Shenoni Password!");
-	}
-
-	$user_exist_query = "SELECT * FROM users WHERE username='$username' LIMIT 1";
-	$result = mysqli_query($db, $user_exist_query);
-	$user = mysqli_fetch_assoc($result);
-	if($user['username'] === $username){
-		array_push($errors, "Ekziston nje account me kete username!");
-	}
-
-	if(count($errors) == 0){
-		$query = "insert into users(emri, mbiemri, user_type, username, password) values ('$emri', '$mbiemri', '$usertype','$username', '$password')";
-
-		mysqli_query($db, $query);
-
-		$_SESSION['success'] = "Useri u krijua me sukses";
-
-		header('location: admin.php');
-	}
-}
+?>

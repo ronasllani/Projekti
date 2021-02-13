@@ -4,6 +4,7 @@
         <li><a href="admin.php" class="<?php active('admin.php');?>">Dashboard</a></li>
         <li><a href="create-user.php" class="<?php active('create-user.php');?>">Krijo User</a></li>
         <li><a href="mesazhet.php" class="<?php active('mesazhet.php');?>">Mesazhet</a></li>
+        <li><a href="users.php" class="<?php active('users.php');?>">Users</a></li>
     </ul>
 </nav>            
 <a class="lgr" href="admin.php?logout='1'"><button class="navbut">Logout</button></a>
