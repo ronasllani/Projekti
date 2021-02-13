@@ -1,0 +1,46 @@
+.success{
+    color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+    width: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.admin-info{
+    padding: 2%;
+    margin: 10vh auto 0 auto ;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.104);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    border: solid 2px rgba(255, 255, 255, 0.111);
+    color: white;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    justify-content: center;
+
+}
+.admin-title{
+    margin-bottom: 10px;
+}
+.logout-but{
+    cursor: pointer;
+    padding: 8px;
+    border: solid 2px teal;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+}
+.logout-but:hover{
+    background-color:teal;
+    transition: 0.3s;
+  }
