@@ -95,3 +95,16 @@ td{
   background-color:rgb(128, 0, 0);
   transition: 0.3s;
 }
+.user-type{
+  color: black;
+}
+.error{
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #a94442;
+  color: #a94442;
+  background: #f2dede;
+  text-align: center;
+  border-radius: 5px;
+}
