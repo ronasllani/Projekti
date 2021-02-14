@@ -1,3 +1,6 @@
+<?php include ('functions.php');?>
+<?php include ('menudatabase.php');?>    
+
 <!DOCTYPE html>
 <html>
     <head> 
@@ -34,17 +37,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti1
+                                <?php echo $titulli;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $cmimi;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, animi, ullam voluptate laborum tempore ex veritatis odit soluta magni voluptas dolorem dolorum accusantium esse deserunt omnis exercitationem nemo obcaecati nulla.</p>
+                            <p>
+                                <?php echo $pershkrimi;?>
+                            </p>
                         </div>
                     </div>
 
@@ -52,17 +57,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti2
+                                <?php echo $titulli1;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $cmimi1;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, accusamus eligendi, dolore tempora illo laboriosam veritatis iure ratione hic magni pariatur eaque asperiores dignissimos quia necessitatibus alias architecto quam in.</p>
+                            <p>
+                                <?php echo $pershkrimi1;?>
+                            </p>
                         </div>
                     </div>
 
@@ -70,17 +77,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti3
+                                <?php echo $titulli2;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $cmimi2;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil unde architecto rerum, obcaecati incidunt </p>
+                            <p>
+                                <?php echo $pershkrimi2;?>
+                            </p>
                         </div>
                     </div>
 
@@ -88,35 +97,40 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti4
+                                <?php echo $titulli3;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $cmimi3;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil unde architecto rerum, obcaecati incidunt </p>
+                            <p>
+                                <?php echo $pershkrimi3;?>
+                            </p>
                         </div>
                     </div>
+
                 </div>
                 <div class="menusection2">
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti1
+                                <?php echo $titulli4;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $cmimi4;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil unde architecto rerum, obcaecati incidunt </p>
+                            <p>
+                                <?php echo $pershkrimi4;?>
+                            </p>
                         </div>
                     </div>
 
@@ -124,17 +138,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti2
+                                <?php echo $titulli5;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $cmimi5;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis deserunt neque dolorem. Nisi veritatis earum amet rem possimus tenetur placeat delectus. Perspiciatis enim ad aut vitae ea nesciunt dolor perferendis?</p>
+                            <p>
+                                <?php echo $pershkrimi5;?>
+                            </p>
                         </div>
                     </div>
 
@@ -142,17 +158,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti3
+                                <?php echo $titulli6;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $cmimi6;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil unde architecto rerum, obcaecati incidunt </p>
+                            <p>
+                                <?php echo $pershkrimi6;?>
+                            </p>
                         </div>
                     </div>
 
@@ -160,17 +178,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti4
+                                <?php echo $titulli7;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $cmimi7;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas vitae maxime commodi deserunt odio officiis quis non illo perspiciatis? Distinctio perspiciatis delectus placeat minima consequuntur ipsum repudiandae nisi, voluptas molestiae.</p>
+                            <p>
+                                <?php echo $pershkrimi7;?>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -182,20 +202,22 @@
             <p class="sec-titulli">Ushqim</p>
             <div class="menusection">
                 <div class="menusection1">
-                    <div class="item">
+                <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti1
+                                <?php echo $utitulli;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $ucmimi;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil unde architecto rerum, obcaecati incidunt </p>
+                            <p>
+                                <?php echo $upershkrimi;?>
+                            </p>
                         </div>
                     </div>
 
@@ -203,17 +225,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti2
+                                <?php echo $utitulli1;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $ucmimi1;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam facere in, quam accusamus alias labore nulla consequuntur debitis, numquam, sint et laborum sed perferendis excepturi optio placeat accusantium perspiciatis porro.</p>
+                            <p>
+                                <?php echo $upershkrimi1;?>
+                            </p>
                         </div>
                     </div>
 
@@ -221,17 +245,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti3
+                                <?php echo $utitulli2;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $ucmimi2;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil unde architecto rerum, obcaecati incidunt </p>
+                            <p>
+                                <?php echo $upershkrimi2;?>
+                            </p>
                         </div>
                     </div>
 
@@ -239,35 +265,40 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti4
+                                <?php echo $utitulli3;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $ucmimi3;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, suscipit quae! Maiores, sequi itaque velit placeat eius adipisci quam nobis neque similique esse distinctio eveniet, ullam pariatur, veritatis nostrum perferendis?</p>
+                            <p>
+                                <?php echo $upershkrimi3;?>
+                            </p>
                         </div>
                     </div>
+
                 </div>
                 <div class="menusection2">
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti1
+                                <?php echo $utitulli4;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $ucmimi4;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil unde architecto rerum, obcaecati incidunt </p>
+                            <p>
+                                <?php echo $upershkrimi4;?>
+                            </p>
                         </div>
                     </div>
 
@@ -275,17 +306,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti2
+                                <?php echo $utitulli5;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $ucmimi5;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt velit ipsam dicta ullam laudantium, maxime esse pariatur illum ad alias eligendi exercitationem tempora? Sit neque incidunt deleniti quo quos. </p>
+                            <p>
+                                <?php echo $upershkrimi5;?>
+                            </p>
                         </div>
                     </div>
 
@@ -293,17 +326,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti3
+                                <?php echo $utitulli6;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $ucmimi6;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil unde architecto rerum, obcaecati incidunt </p>
+                            <p>
+                                <?php echo $upershkrimi6;?>
+                            </p>
                         </div>
                     </div>
 
@@ -311,17 +346,19 @@
                     <div class="item">
                         <div class="item-title">
                             <h2 class="ititle">
-                                Produkti4
+                                <?php echo $utitulli7;?>
                             </h2>
                             <div class="ilines">
                                 
                             </div>
                             <p class="iprice">
-                                $
+                                <?php echo $ucmimi7;?>
                             </p>
                         </div>
                         <div class="idesc">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil unde architecto rerum, obcaecati incidunt </p>
+                            <p>
+                                <?php echo $upershkrimi7;?>
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,4 @@
 <?php include ('../functions.php');
-    session_start();
     if(isset($_SESSION['role']) && isset($_SESSION['username'])){
         if(strcmp($_SESSION['role'], 'admin')== 0){
 ?>
@@ -45,7 +44,7 @@
             <div class="mesazhi-main">
                 
                 <table class="table table-bordered">
-                    <tr class="userstr">
+                    <tr>
                         <td> ID </td>
                         <td> Emri </td>
                         <td> Mbiemri </td>

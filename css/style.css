@@ -235,8 +235,10 @@ main{
   font-variant: small-caps;
 }
 .nav-elements{
+  padding: -2px;
+  display: flex;
+  flex-direction: column;
   width: auto;
-  cursor: pointer;
   font-family: sans-serif;
 }
 .nav-elements :hover{
@@ -246,6 +248,7 @@ main{
   line-height: 1.8em;
   text-decoration: none;
   color: rgb(162, 162, 162);
+  margin: 0 auto;
 }
 .footer-contact{
   line-height: 1.8em;
@@ -259,6 +262,7 @@ main{
 .fcontact-a{
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 .fcontact-a :hover{
   color: teal;
@@ -267,8 +271,13 @@ footer{
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   margin-top: 50px;
 }
-
+.nav-a{
+  margin: 0 auto;
+}
 @media screen and (max-width: 768px){
+  .side2{
+  font-size: 15px;
+  }
   .side{
     flex-direction: column;
     float: left;
@@ -295,11 +304,30 @@ footer{
     margin: 0 auto;
   }
   .hamburger{
-    width: 350px;
+    width: 250px;
     height: auto;
   }
   .shija-footer>p{
     width: 200px;
+    font-size: 13px;
+  }
+  .footer-div{
+    flex-direction: column;
+  }
+  .shija-footer{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  .footer-contact>p{
+    font-size: 12px;
+  }
+  .footer-nav{
+    margin-bottom: 20px;
+  }
+  .footer-content{
+    font-size: 10px;
   }
   .ititle{
     font-size: 15px;
@@ -309,6 +337,23 @@ footer{
   }
   .idesc>p{
     font-size: 10px;
+  }
+  .aboutp{
+    font-size: 12px;
+
+  }
+  .container{
+    width: 300px;
+    height: auto;
+  }
+  .admin-info{
+    width: 300px;
+  }
+  .profile-labels{
+    font-size: 14px;
+  }
+  .profile-info{
+    font-size: 14px;
   }
 }
 
@@ -414,7 +459,7 @@ footer{
   font-variant: small-caps;
   letter-spacing: 1px;
   color: white;
-  font-size: 40px;
+  font-size: 4vw;
   margin: 40px;
 }
 .pije-container {
@@ -648,7 +693,7 @@ footer{
   margin-top: 20px;
 }
 
-.input, .area{
+.input{
   width: 100%;
   padding: 20px;
   margin-bottom: 25px;
@@ -657,6 +702,17 @@ footer{
   font-size: 14px;
   border-radius: 5px;
   color: white;
+}
+.area{
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #ffffff52;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 14px;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
 }
 
 
@@ -760,6 +816,7 @@ footer{
 .link-container a:first-child {
   border-right: 2px solid rgba(255, 255, 255, 0.111);
   border-left: 2px solid rgba(255, 255, 255, 0.111);
+
 }
   
 .link-container>a:hover {
@@ -831,3 +888,6 @@ footer{
 }
 
 /*,   */
+
+
+  

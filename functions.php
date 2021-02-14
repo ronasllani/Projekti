@@ -268,7 +268,7 @@ if(isset($_POST['edit_btn'])){
 	$user = mysqli_fetch_assoc($result);
 	if($user['username'] === $username){
 	array_push($errors, "Ekziston nje account me kete username!");
-}
+	}
 
 	if(count($errors) == 0){
 		$query = "update users set emri = '".$emri."', mbiemri='".$mbiemri."' , username='".$username."' , password='".$password."' where id='".$id."'";
@@ -280,6 +280,60 @@ if(isset($_POST['edit_btn'])){
 	}
 }
 
+
+//validimi i edititimit te menus per rubriken e pijeve ne admin dashboard
+if(isset($_POST['pije_btn'])){
+
+	$id = $_GET['ID'];
+	$titulli = mysqli_real_escape_string($db, $_POST['titulli']);
+	$cmimi = mysqli_real_escape_string($db, $_POST['cmimi']);
+	$pershkrimi = mysqli_real_escape_string($db, $_POST['pershkrimi']);
+
+	if(empty($titulli)){
+		array_push($errors, "Shenoni Titullin!");
+	} 
+	if(empty($cmimi)) {
+		array_push($errors, "Shenoni Cmimin!");
+	}
+
+
+
+	if(count($errors) == 0){
+		$query = "update pije set titulli = '".$titulli."', cmimi='".$cmimi."', pershkrimi='".$pershkrimi."' where id='".$id."'";
+		$result = mysqli_query($db, $query);
+		header('location:adminmenu.php');
+		$_SESSION['success'] = "Te dhenat u nderruan me sukses";
+	}
+}
+
+
+//validimi i edititimit te menus per rubriken e ushqimit ne admin dashboard
+if(isset($_POST['ushqim_btn'])){
+
+	$id = $_GET['ID'];
+	$titulli = mysqli_real_escape_string($db, $_POST['titulli']);
+	$cmimi = mysqli_real_escape_string($db, $_POST['cmimi']);
+	$pershkrimi = mysqli_real_escape_string($db, $_POST['pershkrimi']);
+
+	if(empty($titulli)){
+		array_push($errors, "Shenoni Titullin!");
+	} 
+	if(empty($cmimi)) {
+		array_push($errors, "Shenoni Cmimin!");
+	}
+	if(empty($cmimi)) {
+		array_push($errors, "Shenoni Pershkrimin!");
+	}
+
+
+
+	if(count($errors) == 0){
+		$query = "update ushqim set titulli = '".$titulli."', cmimi='".$cmimi."', pershkrimi='".$pershkrimi."' where id='".$id."'";
+		$result = mysqli_query($db, $query);
+		header('location:adminmenu.php');
+		$_SESSION['success'] = "Te dhenat u nderruan me sukses";
+	}
+}
 
 
 
