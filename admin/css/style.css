@@ -62,31 +62,40 @@ border: 1px solid #3c763d;
 }
 table, th, td {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-  border: solid 2px rgba(255, 255, 255, 0.315);
+  border: solid 2px rgb(116, 116, 116);
   color: white;
-  width: 10px;
+  width: auto;
   text-align: center;
   height: 40px;
-  
-}
+  border-collapse: collapse;
 
+}
+table{
+  border: 0;
+  width: auto;
+
+}
 th{
-  background: rgba(0, 0, 0, 0.527);
+  background: teal;
   padding-left: 20px;
   padding-right: 20px;
+  color: white;
 
 }
-td{
-  width: 200px;
-}
+
 .wrapword {
   word-wrap: break-word;
   width: 50%;
 
 }
+.top-table{
+height: 30px;
+background: teal;
+color: white;
+height: 40px;
+}
 td{
 padding: 20px;
-
 }
 .mesazhi{
 width: 500px;
@@ -159,6 +168,7 @@ font-family: sans-serif;
 font-variant: normal;
 }
 
+
 .pinfo{
 padding: 6px;
 border-left: solid 2px rgba(255, 255, 255, 0.111);
@@ -215,3 +225,31 @@ font-family: sans-serif;
 border: 0;
 
 }
+
+.order-label{
+margin: 0 auto;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.397);
+font-size: 14px;
+width: 70%;
+color: black;
+border: 1px solid #ffffff52;
+border-radius: 10px;
+}
+.order-labels{
+margin-top: 35px;
+width: 70%;
+position: relative;
+left: 15%;
+border: 0px;
+padding-left: 10px;
+height: 45px;
+border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.068);
+border: 1px solid #ffffff52;
+color: #ffffff52;
+text-align: left;
+padding-top: 14px;
+font-size: 14px;
+}
+

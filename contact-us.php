@@ -12,7 +12,13 @@
 
     <body>
         <header>
-            <?php include ('./components/header.php');?>    
+            <?php
+                if(isset($_SESSION['username'])){
+                    include ('components/loggedheader.php');
+                }else{
+                    include ('components/header.php');
+                }
+            ?>    
         </header>
         <main>
             <div class="contacttext">

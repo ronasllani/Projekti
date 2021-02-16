@@ -1,6 +1,7 @@
 <?php include ('../functions.php');
+    session_start();
     if(isset($_SESSION['role']) && isset($_SESSION['username'])){
-        if(strcmp($_SESSION['role'], 'admin')== 0){
+        if(strcmp($_SESSION['role'], 'user')== 0){
 ?>
 
 <?php 
@@ -24,7 +25,7 @@
 
     <body>
         <header>
-            <?php include ('components/adminheader.php');?>    
+            <?php include ('components/userheader.php');?>    
         </header>
 
         <main >
@@ -40,15 +41,20 @@
 
                 </div>
             <?php endif ?>
+
+            <?php
+
+                
+
+            ?>
             <div class="mesazhi-main">
 
                 
                 <table class="table table-bordered">
                     <tr class="top-table">
-                        <td> ID </td>
                         <td> Titulli </td>
                         <td> Cmimi </td>
-                        <td> Operations </td>
+                        <td> Order </td>
                     </tr>
 
                     <?php 
@@ -58,12 +64,12 @@
                                 $id = $row['id'];
                                 $titulli = $row['titulli'];
                                 $cmimi = $row['cmimi'];
+                                $pershkrimi = $row['pershkrimi'];
                     ?>
                             <tr>
-                                <td><?php echo $id ?></td>
                                 <td><?php echo $titulli ?></td>
                                 <td><?php echo $cmimi ?></td>
-                                <td ><a href="editpije.php?GetID=<?php echo $id ?>"><button class="edit-button">Edit</button></a></td>
+                                <td ><a href="orderpije.php?GetID=<?php echo $id ?>"><button class="edit-button">Order</button></a></td>
                             </tr>        
                     <?php 
                             }  
@@ -81,16 +87,16 @@
                 $result = mysqli_query($db, $ushqimlist);
             ?>
 
+            
+
             <div class="mesazhi-main">
 
                 
                 <table class="table table-bordered">
                     <tr class="top-table">
-                        <td> ID </td>
                         <td> Titulli </td>
                         <td> Cmimi </td>
-                        <td> Pershkrimi </td>
-                        <td> Operations </td>
+                        <td> Order </td>
                     </tr>
 
                     <?php 
@@ -103,11 +109,9 @@
                                 $pershkrimi = $row['pershkrimi'];
                     ?>
                             <tr>
-                                <td><?php echo $id ?></td>
                                 <td><?php echo $titulli ?></td>
                                 <td><?php echo $cmimi ?></td>
-                                <td style="word-wrap: break-word; width: 1em;"><?php echo $pershkrimi ?></td>
-                                <td ><a href="editushqim.php?GetID=<?php echo $id ?>"><button class="edit-button">Edit</button></a></td>
+                                <td ><a href="orderushqim.php?GetID=<?php echo $id ?>"><button class="edit-button">Order</button></a></td>
                             </tr>        
                     <?php 
                             }  
@@ -128,7 +132,7 @@
 </html>
 <?php
 }else{
-    header("Location: user.php");
+    header("Location: admin.php");
     exit();
 }
 }

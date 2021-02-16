@@ -1,3 +1,5 @@
+<?php include ('functions.php');?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,7 +13,13 @@
 
     <body>
         <header>
-            <?php include ('./components/header.php');?>
+            <?php
+                if(isset($_SESSION['username'])){
+                    include ('components/loggedheader.php');
+                }else{
+                    include ('components/header.php');
+                }
+            ?>
         </header>
 
 

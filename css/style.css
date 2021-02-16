@@ -200,12 +200,13 @@ main{
 }
 .footer-div{
   border-top: solid 1px rgba(255, 255, 255, 0.508);
-  padding-top: 40px;
+  padding-top: 50px;
   color: rgb(201, 201, 201);
   display: flex;
   flex-direction: row;
   padding-left: 20px;
   justify-content: space-evenly;
+  margin-bottom: 6vh;
 }
 .shija-footer{
   position: relative;
@@ -274,6 +275,38 @@ footer{
 .nav-a{
   margin: 0 auto;
 }
+.logo-footer{
+  width: 100px;
+  margin-left: -50px;
+}
+.social{
+  width: auto;
+  text-align: center;
+}
+.social>a{
+  display: inline-flex;
+  text-decoration: none;
+  color:white;
+  border: 1px solid white;
+  padding: 15px 15px;
+  margin: 0 15px;
+  font-size: 15pt;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  border-radius: 70px;
+  transition: 0.2s;
+  justify-content: center;
+}
+.social>a>i{
+  transition: 0.2s;
+}
+.social>a:hover{
+  transform: scale();
+  background-color: white;
+  border: 1px solid white;
+  color: rgb(0, 0, 0);
+}
 @media screen and (max-width: 768px){
   .side2{
   font-size: 15px;
@@ -299,6 +332,9 @@ footer{
   }
   .nav-links li{
     padding: 10px 10px;
+    display: inline-block;
+    align-items: center;
+    margin: 0 auto;
   }
   nav{
     margin: 0 auto;
@@ -315,10 +351,11 @@ footer{
     flex-direction: column;
   }
   .shija-footer{
-    text-align: center;
+    /* text-align: center;
     align-items: center;
     margin-bottom: 20px;
-    font-family: sans-serif;
+    font-family: sans-serif; */
+    display: none;
   }
   .footer-contact>p{
     font-size: 12px;
@@ -354,6 +391,10 @@ footer{
   }
   .profile-info{
     font-size: 14px;
+  }
+  .logo-footer{
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -890,4 +931,22 @@ footer{
 /*,   */
 
 
-  
+.success{
+  color: #3c763d; 
+  background: #dff0d8; 
+  border: 1px solid #3c763d;
+  width: auto;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0px auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.success1{
+  margin-bottom: -10px;
+  margin-top: 20px;
+}

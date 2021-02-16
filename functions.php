@@ -56,12 +56,9 @@ if (isset($_POST['register_btn'])) {
 		$query = "insert into users(emri, mbiemri, user_type, username, password) values ('$emri', '$mbiemri', 'user','$username', '$password')";
 
 		mysqli_query($db, $query);
+		$_SESSION['success'] = "Registration Successful. Please Login!";
 
-		$_SESSION['role'] = "user";
-		$_SESSION['username'] = $username;
-		$_SESSION['success'] = "You're logged in!";
-
-		header('location: admin/user.php');		  
+		header('location: login.php');		  
 	}
 }
 
@@ -337,11 +334,66 @@ if(isset($_POST['ushqim_btn'])){
 
 
 
+if(isset($_POST['orderpije_btn'])){
+
+	$user = mysqli_real_escape_string($db, $_POST['puser']);
+	$produkti = mysqli_real_escape_string($db, $_POST['produkti']);
+	$cmimi = mysqli_real_escape_string($db, $_POST['pcmimi']);
+	$sasia = mysqli_real_escape_string($db, $_POST['psasia']);
+
+	if(empty($user)){
+		array_push($errors, "Shenoni emrin tuaj!");
+	} 
+	if(empty($sasia)) {
+		array_push($errors, "Shenoni sasine!");
+	}
+
+
+
+
+	if(count($errors) == 0){
+		$query = "insert into orders (user, produkti, cmimi, sasia) values ('$user', '$produkti', '$cmimi','$sasia')";
+		$result = mysqli_query($db, $query);
+		header('location:order.php');
+		$_SESSION['success'] = "Porosia u krye me sukses";
+	}
+}
+
+if(isset($_POST['orderushqim_btn'])){
+
+	$user = mysqli_real_escape_string($db, $_POST['upuser']);
+	$produkti = mysqli_real_escape_string($db, $_POST['uprodukti']);
+	$cmimi = mysqli_real_escape_string($db, $_POST['upcmimi']);
+	$sasia = mysqli_real_escape_string($db, $_POST['upsasia']);
+
+	if(empty($user)){
+		array_push($errors, "Shenoni emrin tuaj!");
+	} 
+	if(empty($sasia)) {
+		array_push($errors, "Shenoni sasine!");
+	}
+
+
+
+
+	if(count($errors) == 0){
+		$query = "insert into orders (user, produkti, cmimi, sasia) values ('$user', '$produkti', '$cmimi','$sasia')";
+		$result = mysqli_query($db, $query);
+		header('location:order.php');
+		$_SESSION['success'] = "Porosia u krye me sukses";
+	}
+}
+
+
+
 
 // validimi i butonit logout
 if(isset($_GET['logout'])){
-	session_destroy();
-	unset($_SESSION['username']);
-	header('location: admin/user.php');
+	session_start();
+    unset($_SESSION['username']);
+    unset($_SESSION['role']);
+    header('Location: ../login.php');
+    $_SESSION['success'] = "Logged Out Successfully!";
+    die;
 }
 ?>

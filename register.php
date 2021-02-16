@@ -1,5 +1,11 @@
 <?php include ('activenav.php');?>
-<?php include ('functions.php') ?>
+<?php include ('functions.php');
+    if(isset($_SESSION['username']))
+    {
+        header("Location: admin/user.php");
+        exit;
+    }
+?>
 
 
 <!DOCTYPE html>
@@ -15,7 +21,13 @@
 
     <body>
         <header>
-            <?php include ('./components/header.php');?>    
+        <?php
+                if(isset($_SESSION['username'])){
+                    include ('components/loggedheader.php');
+                }else{
+                    include ('components/header.php');
+                }
+            ?>    
         </header>
         <main class="loginmain">
             <div class="container">

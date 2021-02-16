@@ -6,8 +6,8 @@
 <?php 
 
     require_once("../functions.php");
-    $userslist = " select * from users";
-    $result = mysqli_query($db, $userslist);
+    $orderlist = " select * from orders";
+    $result = mysqli_query($db, $orderlist);
 
 ?>
 
@@ -17,7 +17,7 @@
     <head>
         <meta content="width=device-width, height=device-height, initial-scale=1" name="viewport">
 
-        <title>Users</title>
+        <title>Orders</title>
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
@@ -45,13 +45,14 @@
                 
                 <table class="table table-bordered">
                     <tr class="top-table">
+                        <td> Data </td>
                         <td> ID </td>
                         <td> Emri </td>
-                        <td> Mbiemri </td>
-                        <td> UserType </td>
-                        <td> Username  </td>
-                        <td> Password </td>
-                        <td colspan="2"> Operations </td>
+                        <td> Produkti </td>
+                        <td> Cmimi </td>
+                        <td> Sasia  </td>
+                        <td> Totali  </td>
+                        <td> Operations </td>
 
 
                     </tr>
@@ -60,23 +61,23 @@
                             
                             while($row=mysqli_fetch_assoc($result))
                             {
+                                $date = $row['date'];
                                 $id = $row['id'];
-                                $emri = $row['emri'];
-                                $mbiemri = $row['mbiemri'];
-                                $usertype = $row['user_type'];
-                                $username = $row['username'];
-                                $password = $row['password'];
-
+                                $user = $row['user'];
+                                $produkti = $row['produkti'];
+                                $cmimi = $row['cmimi'];
+                                $sasia = $row['sasia'];
+                                $totali = $sasia * $cmimi;
                     ?>
                             <tr>
+                                <td><?php echo $date ?></td>
                                 <td><?php echo $id ?></td>
-                                <td><?php echo $emri ?></td>
-                                <td><?php echo $mbiemri ?></td>
-                                <td><?php echo $usertype ?></td>
-                                <td><?php echo $username ?></td>
-                                <td><?php echo $password ?></td>
-                                <td ><a href="edit.php?GetID=<?php echo $id ?>"><button class="edit-button">Edit</button></a></td>
-                                <td ><a href="delete.php?Del=<?php echo $id ?>"><button class="delete-button">Delete</button></a></td>
+                                <td><?php echo $user ?></td>
+                                <td><?php echo $produkti ?></td>
+                                <td><?php echo $cmimi ?></td>
+                                <td><?php echo $sasia ?></td>
+                                <td><?php echo $totali ?><?php echo '$' ?></td>
+                                <td ><a href="deleteorder.php?Del=<?php echo $id ?>"><button class="delete-button">Delete</button></a></td>
                             </tr>        
                     <?php 
                             }  

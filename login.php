@@ -1,5 +1,11 @@
 <?php include ('activenav.php')?>
-<?php include ('functions.php')?>
+<?php include ('functions.php');
+    if(isset($_SESSION['username']))
+    {
+        header("Location: admin/user.php");
+        exit;
+    }
+?>
 
 <!DOCTYPE html>
 <html>
@@ -14,7 +20,13 @@
 
     <body>
         <header>
-            <?php include ('./components/header.php');?>    
+            <?php
+                if(isset($_SESSION['username'])){
+                    include ('components/loggedheader.php');
+                }else{
+                    include ('components/header.php');
+                }
+            ?>    
         </header>
         <main class="loginmain">
             <div class="container">
@@ -23,7 +35,18 @@
                     <a href="register.php" >Register</a>
                 </div>
                 <form class="login forms form-style" id="mainForm" action="login.php" method="post">
-                <?php include ('errors.php');?>    
+                    <?php include ('errors.php');?>    
+                    <?php if (isset($_SESSION['success'])): ?>
+                        <div class= "success success1">
+                            <h3>
+                                <?php
+                                    echo $_SESSION['success'];
+                                    unset($_SESSION['success'])
+                                ?>
+                            </h3>
+
+                        </div>
+                    <?php endif ?>
 
                     <input type="text" id="username-input" class="inputs" placeholder="Username" name="username" value="<?php echo $username?>"/>
                     <input type="password" id="password-input" class="inputs" placeholder="Password" name="password" />
