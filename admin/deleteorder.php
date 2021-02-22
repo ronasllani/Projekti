@@ -24,3 +24,25 @@
     {
         header("location:users.php");
     }
+
+
+    if(isset($_GET['DelU'])){
+            
+
+        $UserID = $_GET['DelU'];
+        $query = " delete from orders where id = '".$UserID."'";
+        $result = mysqli_query($db, $query);
+        if($result){
+            header("location:userorders.php");
+            $_SESSION['success'] = "Orderi u fshi me sukses";
+
+        }
+        else{
+        
+            echo ' Please Check Your Query ';
+        }
+    }
+    else
+    {
+        header("location:users.php");
+    }
