@@ -1,5 +1,4 @@
 <?php include ('../functions.php');
-    session_start();
     if(isset($_SESSION['role']) && isset($_SESSION['username'])){
         if(strcmp($_SESSION['role'], 'user')== 0){
 ?>

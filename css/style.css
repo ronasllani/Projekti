@@ -366,13 +366,13 @@ footer{
   .footer-content{
     font-size: 10px;
   }
-  .ititle{
+  #ititle{
     font-size: 15px;
   }
-  .iprice{
+  #iprice{
     font-size: 12px;
   }
-  .idesc>p{
+  #idesc{
     font-size: 10px;
   }
   .aboutp{
@@ -427,6 +427,14 @@ footer{
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
+#menusection{
+  transition: all 0.3s ease 0s;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
 .menusection1, .menusection2{
   transition: all 0.3s ease 0s;
   box-sizing: border-box;
@@ -438,6 +446,32 @@ footer{
   text-align: left;
   display: flex;
   flex-direction: column;
+}
+#menusection1{
+  transition: all 0.3s ease 0s;
+  box-sizing: border-box;
+  margin-bottom: 20px auto;
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+#menusection2{
+  transition: all 0.3s ease 0s;
+  box-sizing: border-box;
+  margin-bottom: 20px auto;
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
 }
 .menusection1{
   margin-right: 30px;
@@ -452,6 +486,13 @@ footer{
   flex-direction: column;
   margin-bottom: 20px;
 }
+#item{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 .item-title{
   width: 100;
   height: auto;
@@ -459,7 +500,25 @@ footer{
   flex-direction: row;
   justify-content: space-between;
 }
+#item-title{
+  width: 100;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .ititle{
+  width: auto;
+  height: auto;
+  color: white;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  color: white;
+}
+#ititle{
   width: auto;
   height: auto;
   color: white;
@@ -478,6 +537,14 @@ footer{
   border-top: solid 1px  white;
   border-bottom: solid 1px  white;
 }
+#ilines{
+  margin-top: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 5px;
+  border-top: solid 1px  white;
+  border-bottom: solid 1px  white;
+}
 .iprice{
   color: white;
   margin-left: 10px;
@@ -485,7 +552,22 @@ footer{
   font-family: sans-serif;
   color: white;
 }
+#iprice{
+  color: white;
+  margin-left: 10px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: white;
+}
 .idesc{
+  line-height: 1.2;
+  font-family: serif;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-size: 15px;
+  color: rgb(172, 172, 172);;
+}
+#idesc{
   line-height: 1.2;
   font-family: serif;
   letter-spacing: 1px;

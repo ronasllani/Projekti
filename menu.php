@@ -1,5 +1,4 @@
 <?php include ('functions.php');?>
-<?php include ('menudatabase.php');?>    
 
 <!DOCTYPE html>
 <html>
@@ -38,339 +37,60 @@
                 <img src="img/pije.jpg" alt="" class="pije-foto">
             </div>
             <p class="sec-titulli">Pije</p>
-            <div class="menusection">
-                <div class="menusection1">
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $titulli;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $cmimi;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $pershkrimi;?>
-                            </p>
-                        </div>
-                    </div>
 
+        
+            <?php
+                while ($row = mysqli_fetch_array($pijeresult)) {
+                    echo "<div id='menusection'>";
+                        echo "<div id='menusection1'>";
 
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $titulli1;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $cmimi1;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $pershkrimi1;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $titulli2;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $cmimi2;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $pershkrimi2;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $titulli3;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $cmimi3;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $pershkrimi3;?>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="menusection2">
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $titulli4;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $cmimi4;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $pershkrimi4;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $titulli5;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $cmimi5;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $pershkrimi5;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $titulli6;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $cmimi6;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $pershkrimi6;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $titulli7;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $cmimi7;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $pershkrimi7;?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+                            echo "<div id='item'>";
+                                echo "<div id='item-title'>";
+                                    echo "<h2 id='ititle'>";
+                                        echo $row['titulli'];
+                                    echo "</h2>";
+                                    echo "<div id='ilines'>";
+                                    echo "</div>";
+                                    echo "<p id='iprice'>";
+                                        echo $row['cmimi'];
+                                    echo "</p>";
+                                echo "</div>";
+                            echo "</div>";
+                        echo "</div>";
+                    echo "</div>";
+                        
+                }
+            ?>
+                    
             <div class="pije-container" >
                 <img src="img/ushqim.jpg" alt="" class="pije-foto">
             </div>
             <p class="sec-titulli">Ushqim</p>
-            <div class="menusection">
-                <div class="menusection1">
-                <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $utitulli;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $ucmimi;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $upershkrimi;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $utitulli1;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $ucmimi1;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $upershkrimi1;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $utitulli2;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $ucmimi2;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $upershkrimi2;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $utitulli3;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $ucmimi3;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $upershkrimi3;?>
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="menusection2">
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $utitulli4;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $ucmimi4;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $upershkrimi4;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $utitulli5;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $ucmimi5;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $upershkrimi5;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $utitulli6;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $ucmimi6;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $upershkrimi6;?>
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="item-title">
-                            <h2 class="ititle">
-                                <?php echo $utitulli7;?>
-                            </h2>
-                            <div class="ilines">
-                                
-                            </div>
-                            <p class="iprice">
-                                <?php echo $ucmimi7;?>
-                            </p>
-                        </div>
-                        <div class="idesc">
-                            <p>
-                                <?php echo $upershkrimi7;?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
+            <?php
+                while ($row1 = mysqli_fetch_array($ushqimresult)) {
+                    echo "<div id='menusection'>";
+                        echo "<div id='menusection1'>";
+                            echo "<div id='item'>";
+                                echo "<div id='item-title'>";
+                                    echo "<h2 id='ititle'>";
+                                        echo $row1['titulli'];
+                                    echo "</h2>";
+                                    echo "<div id='ilines'>";
+                                    echo "</div>";
+                                    echo "<p id='iprice'>";
+                                        echo $row1['cmimi'];
+                                    echo "</p>";
+                                echo "</div>";
+                                echo "<div id='idesc'>";
+                                    echo "<p>";
+                                        echo $row1['pershkrimi'];
+                                    echo "</p>";
+                                echo "</div>";
+                            echo "</div>";
+                        echo "</div>";
+                    echo "</div>";      
+                }
+            ?>
         </main>
         <footer>
             <?php include ('./components/footer.php');?>    

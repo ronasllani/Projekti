@@ -35,26 +35,26 @@ border: 1px solid #3c763d;
 .logout-but{
   cursor: pointer;
   padding: 8px;
-  border: solid 2px teal;
+  border: solid 2px rgb(128, 0, 0);
   color: white;
   background: rgba(0, 0, 0, 0);
   border-radius: 5px;
 }
 .logout-but:hover{
-  background-color:teal;
+  background-color:rgb(128, 0, 0);
   transition: 0.3s;
 }
 .create-but{
   cursor: pointer;
   padding: 8px;
-  border: solid 2px rgb(18, 77, 0);
+  border: solid 2px teal;
   color: white;
   background: rgba(0, 0, 0, 0);
   border-radius: 5px;
   margin-bottom: 10px;
 }
 .create-but:hover{
-  background-color:rgb(18, 77, 0);
+  background-color:teal;
   transition: 0.3s;
 }
 .user-type{
@@ -89,167 +89,186 @@ th{
 
 }
 .top-table{
-height: 30px;
-background: teal;
-color: white;
-height: 40px;
+  height: 30px;
+  background: teal;
+  color: white;
+  height: 40px;
 }
 td{
-padding: 20px;
+  padding: 20px;
 }
 .mesazhi{
-width: 500px;
+  width: 500px;
 }
 .mesazhi-main{
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .edit-button{
-cursor: pointer;
-padding: 8px;
-border: solid 2px teal;
-color: white;
-background: rgba(0, 0, 0, 0);
-border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  border: solid 2px teal;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  margin: 0 auto;
 }
 .edit-button:hover{
-background-color:teal;
-transition: 0.3s;
+  background-color:teal;
+  transition: 0.3s;
+}
+.addpije-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.pije-button{
+  cursor: pointer;
+  padding: 13px;
+  border: solid 2px green;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  margin: 0 auto
+}
+.pije-button:hover{
+  background-color:green;
+  transition: 0.3s;
 }
 .delete-button{
-cursor: pointer;
-padding: 8px;
-border: solid 2px rgb(128, 0, 0);
-color: white;
-background: rgba(0, 0, 0, 0);
-border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  border: solid 2px rgb(128, 0, 0);
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
 }
 .delete-button:hover{
-background-color:rgb(128, 0, 0);
-transition: 0.3s;
+  background-color:rgb(128, 0, 0);
+  transition: 0.3s;
 }
 .editprofile-button{
-cursor: pointer;
-padding: 8px;
-border: solid 2px rgb(128, 0, 0);
-color: white;
-background: rgba(0, 0, 0, 0);
-border-radius: 5px;
-margin-bottom: 15px;
+  cursor: pointer;
+  padding: 8px;
+  border: solid 2px teal;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 .editprofile-button:hover{
-background-color:rgb(128, 0, 0);
-transition: 0.3s;
+  background-color:teal;
+  transition: 0.3s;
 }
 .profile-information{
-margin: 0 auto;
-background: rgba(0, 0, 0, 0.104);
-border: solid 2px rgba(255, 255, 255, 0.111);
-border-radius: 5px;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-width: 80%;
-margin-bottom: 15px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.104);
+  border: solid 2px rgba(255, 255, 255, 0.111);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-bottom: 15px;
 }
 .profile-labels{
-display: flex;
-flex-direction: column;
-text-align: left;
-width: 70%;
-background-color: rgba(0, 0, 0, 0.315);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.315);
 }
 .profile-info{
-display: flex;
-flex-direction: column;
-width: 100%;
-text-align: left;
-font-family: sans-serif;
-font-variant: normal;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-variant: normal;
 }
 
 
 .pinfo{
-padding: 6px;
-border-left: solid 2px rgba(255, 255, 255, 0.111);
-border-bottom: solid 2px rgba(255, 255, 255, 0.111);
+  padding: 6px;
+  border-left: solid 2px rgba(255, 255, 255, 0.111);
+  border-bottom: solid 2px rgba(255, 255, 255, 0.111);
 }
 .lastlabel{
-padding: 6px;
-padding-left: 5px;
+  padding: 6px;
+  padding-left: 5px;
 }
 .lastinfo{
-padding: 6px;
-border-left: solid 2px rgba(255, 255, 255, 0.111);
-padding-left: 5px;
+  padding: 6px;
+  border-left: solid 2px rgba(255, 255, 255, 0.111);
+  padding-left: 5px;
 }
 .plabel{
-padding: 6px;
-border-bottom: solid 2px rgba(255, 255, 255, 0.111);
-padding-left: 5px;
+  padding: 6px;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.111);
+  padding-left: 5px;
 }
 .profile-title{
-margin-bottom: 5px;
-margin-top: 15px;
+  margin-bottom: 5px;
+  margin-top: 15px;
 }
 .adminmenu-title{
-color: white;
-text-align: center;
-font-size: 3.5vw;
-font-family: sans-serif;
-font-variant: small-caps;
-margin-bottom: 15px;
+  color: white;
+  text-align: center;
+  font-size: 3.5vw;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  margin-bottom: 15px;
 }
 
 .adminmenu-title1{
 
-margin-top: 60px;
+  margin-top: 60px;
 }
 .area1{
-margin-top: 35px;
-width: 70%;
-position: relative;
-left: 15%;
-border: 0px;
-padding-left: 10px;
-padding-top: 10px;
-border-radius: 5px;
-background-color: rgba(255, 255, 255, 0);
-border: 1px solid #ffffff52;
-color: white;
-height: 100px;
-resize: vertical;
-font-family: sans-serif;
+  margin-top: 35px;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  border: 0px;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff52;
+  color: white;
+  height: 100px;
+  resize: vertical;
+  font-family: sans-serif;
 }
 .table-bordered{
-border: 0;
+  border: 0;
 
 }
 
 .order-label{
-margin: 0 auto;
-padding: 10px;
-background-color: rgba(255, 255, 255, 0.397);
-font-size: 14px;
-width: 70%;
-color: black;
-border: 1px solid #ffffff52;
-border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.397);
+  font-size: 14px;
+  width: 70%;
+  color: black;
+  border: 1px solid #ffffff52;
+  border-radius: 10px;
 }
 .order-labels{
-margin-top: 35px;
-width: 70%;
-position: relative;
-left: 15%;
-border: 0px;
-padding-left: 10px;
-height: 45px;
-border-radius: 5px;
-background-color: rgba(255, 255, 255, 0.068);
-border: 1px solid #ffffff52;
-color: #ffffff52;
-text-align: left;
-padding-top: 14px;
-font-size: 14px;
+  margin-top: 35px;
+  width: 70%;
+  position: relative;
+  left: 15%;
+  border: 0px;
+  padding-left: 10px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.068);
+  border: 1px solid #ffffff52;
+  color: #ffffff52;
+  text-align: left;
+  padding-top: 14px;
+  font-size: 14px;
 }
 

@@ -384,6 +384,63 @@ if(isset($_POST['orderushqim_btn'])){
 	}
 }
 
+if(isset($_POST['addpije_btn'])){
+
+
+	$pijetitulli = mysqli_real_escape_string($db, $_POST['pijetitulli']);
+	$pijecmimi = mysqli_real_escape_string($db, $_POST['pijecmimi']);
+	
+
+	if(empty($pijetitulli)){
+		array_push($errors, "Shenoni Titullin!");
+	} 
+	if(empty($pijecmimi)) {
+		array_push($errors, "Shenoni Cmimin!");
+	}
+
+
+
+	if(count($errors) == 0){
+		$query = "insert into pije (titulli, cmimi) values ('$pijetitulli', '$pijecmimi')";
+		$result = mysqli_query($db, $query);
+		header('location:adminmenu.php');
+		$_SESSION['success'] = "Pija u shtue me sukses";
+	}
+}
+$pijeresult = mysqli_query($db, "SELECT * FROM pije");
+
+if(isset($_POST['addushqim_btn'])){
+
+
+	$ushqimtitulli = mysqli_real_escape_string($db, $_POST['ushqimtitulli']);
+	$ushqimcmimi = mysqli_real_escape_string($db, $_POST['ushqimcmimi']);
+	$ushqimpershkrimi = mysqli_real_escape_string($db, $_POST['ushqimpershkrimi']);
+
+	
+
+	if(empty($ushqimtitulli)){
+		array_push($errors, "Shenoni Titullin!");
+	} 
+	if(empty($ushqimcmimi)) {
+		array_push($errors, "Shenoni Cmimin!");
+	}
+	if(empty($ushqimpershkrimi)) {
+		array_push($errors, "Shenoni Pershkrimin!");
+	}
+
+
+	if(count($errors) == 0){
+		$query = "insert into ushqim (titulli, cmimi, pershkrimi) values ('$ushqimtitulli', '$ushqimcmimi', '$ushqimpershkrimi')";
+		$result = mysqli_query($db, $query);
+		header('location:adminmenu.php');
+		$_SESSION['success'] = "Ushqimi u shtue me sukses";
+	}
+}
+$ushqimresult = mysqli_query($db, "SELECT * FROM ushqim");
+
+
+
+
 
 
 
