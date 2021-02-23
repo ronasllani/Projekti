@@ -8,7 +8,7 @@
             
 
         $PijeID = $_GET['Del'];
-        $query = " delete from pije where id = '".$PijeID."'";
+        $query = " delete from pije where id = '$PijeID'";
         $result = mysqli_query($db, $query);
         if($result){
             header("location:adminmenu.php");
@@ -20,19 +20,14 @@
             echo ' Please Check Your Query ';
         }
     }
-    else
-    {
-        header("location:users.php");
-    }
-
     
     if(isset($_GET['Del1'])){
             
 
         $UshqimID = $_GET['Del1'];
-        $query = " delete from ushqim where id = '".$UshqimID."'";
-        $result = mysqli_query($db, $query);
-        if($result){
+        $ushqimquery = " delete from ushqim where id = '$UshqimID'";
+        $ushqimresult = mysqli_query($db, $ushqimquery);
+        if($ushqimresult){
             header("location:adminmenu.php");
             $_SESSION['success'] = "Ushqimi u fshi me sukses";
 
@@ -41,8 +36,4 @@
         
             echo ' Please Check Your Query ';
         }
-    }
-    else
-    {
-        header("location:users.php");
     }

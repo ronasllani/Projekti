@@ -8,7 +8,7 @@
             
 
         $UserID = $_GET['Del'];
-        $query = " delete from orders where id = '".$UserID."'";
+        $query = "delete from orders where id = '$UserID'";
         $result = mysqli_query($db, $query);
         if($result){
             header("location:orders.php");
@@ -20,19 +20,15 @@
             echo ' Please Check Your Query ';
         }
     }
-    else
-    {
-        header("location:users.php");
-    }
 
 
     if(isset($_GET['DelU'])){
             
 
-        $UserID = $_GET['DelU'];
-        $query = " delete from orders where id = '".$UserID."'";
-        $result = mysqli_query($db, $query);
-        if($result){
+        $UserOrderID = $_GET['DelU'];
+        $userquery = " delete from orders where id = '$UserOrderID'";
+        $userresult = mysqli_query($db, $userquery);
+        if($userresult){
             header("location:userorders.php");
             $_SESSION['success'] = "Orderi u fshi me sukses";
 
@@ -41,8 +37,4 @@
         
             echo ' Please Check Your Query ';
         }
-    }
-    else
-    {
-        header("location:users.php");
     }
