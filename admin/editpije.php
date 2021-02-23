@@ -45,7 +45,6 @@
                     <?php include ('../errors.php');?>
                     <input type="text" id="emri-input" class="inputs" placeholder="Titulli" name="titulli" value="<?php echo $titulli?>"/>
                     <input type="text" id="mbiemri-input" class="inputs" placeholder="Cmimi" name="cmimi" value="<?php echo $cmimi?>"/>
-                    <input type="text" id="rusername-input" class="inputs" placeholder="Pershkrimi" name="pershkrimi" value=""/>
                     <input id="submit" type="submit" class="inputs submit" value="Update" name="pije_btn"/>
                 </form>
             </div>

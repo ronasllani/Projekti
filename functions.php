@@ -284,7 +284,6 @@ if(isset($_POST['pije_btn'])){
 	$id = $_GET['ID'];
 	$titulli = mysqli_real_escape_string($db, $_POST['titulli']);
 	$cmimi = mysqli_real_escape_string($db, $_POST['cmimi']);
-	$pershkrimi = mysqli_real_escape_string($db, $_POST['pershkrimi']);
 
 	if(empty($titulli)){
 		array_push($errors, "Shenoni Titullin!");
@@ -296,7 +295,7 @@ if(isset($_POST['pije_btn'])){
 
 
 	if(count($errors) == 0){
-		$query = "update pije set titulli = '".$titulli."', cmimi='".$cmimi."', pershkrimi='".$pershkrimi."' where id='".$id."'";
+		$query = "update pije set titulli = '".$titulli."', cmimi='".$cmimi."' where id='".$id."'";
 		$result = mysqli_query($db, $query);
 		header('location:adminmenu.php');
 		$_SESSION['success'] = "Te dhenat u nderruan me sukses";
